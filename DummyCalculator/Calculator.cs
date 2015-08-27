@@ -52,7 +52,7 @@ namespace DummyCalculator
                 else
                     display = "Invalid Input";
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 display = "ERROR";
             }
@@ -322,7 +322,7 @@ namespace DummyCalculator
             {
                 ch = array[index];
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return '0';
             }

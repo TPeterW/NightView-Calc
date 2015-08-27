@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="e916848d-cd9a-4530-891b-16aaaee4ed9b" Publisher="CN=韬" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="e916848d-cd9a-4530-891b-16aaaee4ed9b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="35186TPWang.NightViewCalculator" Publisher="CN=9C4B1274-6AA0-4C92-BFB4-E83295097D21" Version="2015.827.1.1" />
+  <mp:PhoneIdentity PhoneProductId="f2593f9f-b56d-4086-92d9-82f0941f3452" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>DummyCalculator</DisplayName>
-    <PublisherDisplayName>韬</PublisherDisplayName>
-    <Logo>Assets/70x70.png</Logo>
+    <DisplayName>NightView Calculator</DisplayName>
+    <PublisherDisplayName>TPW Studio</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
@@ -15,19 +15,18 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="DummyCalculator.App">
-      <m3:VisualElements DisplayName="DummyCalculator" Square150x150Logo="Assets\150x150.png" Square44x44Logo="Assets\44x44.png" Description="DummyCalculator" ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
-        <m3:DefaultTile Wide310x150Logo="Assets\744x360.png" Square71x71Logo="Assets\71x71.png">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NightViewCalculator.App">
+      <m3:VisualElements DisplayName="NightView Calculator" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Calculator optimised to be used in environments where light source is week, e.g. at night, in a dark room." ForegroundText="light" BackgroundColor="transparent" ToastCapable="true">
+        <m3:DefaultTile Square71x71Logo="Assets\Square71x71Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png">
           <m3:ShowNameOnTiles>
-            <m3:ShowOn Tile="square150x150Logo" />
             <m3:ShowOn Tile="wide310x150Logo" />
           </m3:ShowNameOnTiles>
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\1152x1920.png" />
+        <m3:SplashScreen Image="Assets\1152x1920.png" BackgroundColor="transparent" />
+        <m3:InitialRotationPreference>
+          <m3:Rotation Preference="portrait" />
+        </m3:InitialRotationPreference>
       </m3:VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClientServer" />
-  </Capabilities>
 </Package>
